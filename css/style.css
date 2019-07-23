@@ -1,0 +1,492 @@
+*{
+	box-sizing: border-box;
+	/* This makes the widths of elements more consistent
+		Full details here https://css-tricks.com/box-sizing/ */
+}
+
+body{
+	margin: 0px; /* Often browsers have a 5px margin by deafult*/
+	font-family: sans-serif;
+	 background-color: rgb(255, 255, 251);
+}
+
+.cityimg{
+	position: absolute;
+	top:-50px;
+	right:70px;
+	color:black;
+}
+
+section{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+header{
+	background-color: darkOrange;
+	color: white;  more readable on an orange background
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+/* pale orange
+nav{
+	width: 100%;
+	height: 60px;
+	background-color: wheat;
+} */
+
+nav a, nav h3{
+	float: left;
+	margin: 0px;
+	line-height: 60px;
+	margin-left: 1em;
+	margin-right: 1em;
+	text-decoration: none;
+}
+
+nav a:hover{
+	text-decoration: underline; /* Hover styles to let people know they can click it */
+}
+
+
+
+/* Simple grid */
+.g-row{
+	width: 100%;
+	overflow: hidden;
+}
+
+.g-row img{
+	width: 100%; /*This makes all images in grids to be the size of their cell */
+}
+
+.g-50{
+	width: 50%;
+	float: left;
+}
+
+.g-30{
+	width: 30%; /*change the width*/
+	float: right;
+}
+
+.g-70{
+	width: 70%;
+	float: left;
+}
+
+.show{
+	border: 1px solid blue;
+	padding: 2px;
+}
+
+.padded{
+	padding: 20px; /* I add this to cells to add a little padding*/
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  top:10px;
+  right:-10px;
+}
+
+.headcolor{
+	color: white;
+	position: absolute;
+  top:35px;
+  left:10px;
+  font-family: "Arial Black";
+  font-size: 36px;
+
+}
+
+.headcolor2{
+	color: white;
+	position: absolute;
+  top:70px;
+  left:20px;
+  font-family: "Arial Black";
+  font-size: 40px;
+
+}
+
+#line {
+	height:0.5px;
+	background-color:black;
+	position: absolute;
+  top:13% ;
+  right: 0%;
+
+}
+
+.t1{
+	position: absolute;
+	top: 25%;
+    right: 25%;
+	width: 30%;
+}
+
+.t3{
+	position: absolute;
+	top: 40%;
+    right: 60%;
+	width: 15%;
+}
+
+.s4{
+	position: absolute;
+	top: 25%;
+    right: 30%;
+	width: 20%;
+}
+
+.cars{
+	position: absolute;
+	top: 70%;
+    right: 30%;
+	width: 20%;
+}
+
+.cc2{
+	position: absolute;
+	top: 20%;
+    right: 30%;
+	width: 25%;
+}
+
+.car{
+	position: absolute;
+	top: 0%;
+    left: 0%;
+	width: 15%;
+}
+
+.street{
+	position: absolute;
+	top: 0%;
+    left: 0%;
+	height: 100%;
+	width: 30%;
+	opacity: 0.5;
+}
+
+
+.camera2{
+	position: absolute;
+	top: 60%;
+    left: 80%;
+	width: 15%;
+}
+
+.test{
+	position: absolute;
+	top: 0%;
+    left: 0%;
+	width: 20%;
+}
+
+.trans{
+	font-size:440%;
+	position: absolute;
+    top:3%;
+    left: 15%;
+}
+
+.trans2{
+	font-size:440%;
+	position: absolute;
+    top:10%;
+    left: 35%;
+}
+
+.trans3{
+	font-size:440%;
+	position: absolute;
+    top:2%;
+    left: 25%;
+}
+
+.t_explan{
+	width: 400px;
+	color: white;
+	font-size:100%;
+	position: absolute;
+    top:50%;
+    left: 75%;
+}
+
+.t_explan2{
+    width: 300px;
+	color: white;
+	font-size:100%;
+	position: absolute;
+    top:65%;
+    left: 5%;
+}
+
+
+
+.home{
+	position: absolute;
+	top:5.7%;
+	right:33%;
+	color:white;
+    text-decoration: none;
+	border-radius: 10px;
+    background: rgba(0,0,0,0.8);
+    width: 7%;
+    height: 5%;  
+    text-align: center;
+    font-family: Comic Sans MS;
+}
+
+.one{
+
+    position: absolute;
+	top:5.7%;
+	right:25%;
+	color:white;
+    text-decoration: none;
+	border-radius: 10px;
+    background: black;
+    width: 7%;
+    height: 5%;  
+    line-height: normal;
+    text-align: center;
+    padding-top: 0.5%;
+    font-family: Comic Sans MS;
+
+}
+
+.two{
+	position: absolute;
+	top:5.7%;
+	right:15%;
+	color:white;
+	 border-radius: 10px;
+    background: black;
+    padding-top: 1%;
+    padding-left: 0.1%;
+    width: 9%;
+    height: 5%;  
+     line-height: normal;
+    text-align: center;
+    padding-top: 0.5%;
+    font-family: Comic Sans MS;
+
+}
+
+.three{
+	position: absolute;
+	top:5.7%;
+	right:5%;
+	color:white;
+	 border-radius: 10px;
+    background: black;
+    padding-top: 1%;
+    padding-left: 0.1%;
+    width: 9%;
+    height: 5%;  
+    line-height: normal;
+    text-align: center;
+    padding-top: 0.5%;
+    font-family: Comic Sans MS;
+}
+/*
+  #img1, #img2, #img3, #img4 {
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:-1;
+    animation-name: test;
+    animation-duration: 5s;
+    opacity:0;
+}
+
+#img2 {
+    animation-delay:5s;
+    -webkit-animation-delay:5s
+}
+#img3 {
+    animation-delay:10s;
+    -webkit-animation-delay:10s
+}
+#img4 {
+    animation-delay:15s;
+    -webkit-animation-delay:15s
+}
+
+@-webkit-keyframes test {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+    }
+}
+@keyframes test {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+    }
+}*/
+.Intro{
+	font-size:900%;
+	position: absolute;
+    top:30%;
+    right: 50%
+}
+
+.Intro1{
+	font-size: 60px;
+	position: absolute;
+	top:50%;
+    right: 50%;
+	
+}
+
+.intro2{
+	font-size: 20px;
+    width: 500px;
+	position: relative;
+	left:100px;
+	top:120px;
+}
+
+.Layer_1 {
+  background-image: url("Layer_1.png");
+  position: absolute;
+ right: 5%;
+  top: 20%;
+  z-index: 2;
+}
+
+
+
+.p{
+	padding: 100px;
+	padding-bottom: 100px;
+}
+
+.home:hover{
+	 background-color: rgba(0, 0, 0, 0.1);
+	 color: black;
+}
+
+.one:hover{
+	 background-color: rgba(0, 0, 0, 0.1);
+	 color: black;
+}
+
+
+.two:hover{
+	 background-color: rgba(0, 0, 0, 0.1);
+	 color: black;
+}
+
+.three:hover{
+	 background-color: rgba(0, 0, 0, 0.1);
+	 color: black;
+}
+
+
+.Layer_3 {
+  background-image: url("Layer_3.png");
+  position: absolute;
+  left: 15%;
+  top: -8%;
+  width: 500px;
+  height: 300px;
+ /* z-index: 2;*/
+}
+
+.Layer_4 {
+  background-image: url("Layer_3.png");
+  position: absolute;
+  left: 30%;
+  top: -8%;
+  width: 500px;
+  height: 300px;
+ /* z-index: 2;*/
+}
+
+
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.avatar {
+	width: 1%;
+	height: 0px;
+	/*box-sizing: border-box;*/
+	/*border: 5px white solid;
+	border-radius: 50%;*/
+	/*overflow: hidden;*/
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+
+.container {
+position: absolute;
+left: 10%;
+  top: 60%;
+
+}
+
+
+.square {
+  height: 20%;
+  width: 40%;
+  background-color:black;
+  position: absolute;
+  left: 60%;
+  top:45%;
+  }
+
+  .square2 {
+  height: 20%;
+  width: 50%;
+  background-color:black;
+  position: absolute;
+  right: 50%;
+  top:60%;
+  }
+
+
+
+
+
+/*index3*/
+
+
+
+
+
